@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    android:id="@+id/Itemview"
+    xmlns:tools="http://schemas.android.com/tools">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:background="#BA8C64">
+
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="100dp"
+           android:scaleType="centerCrop"
+           android:id="@+id/Contact_img"
+           android:contentDescription="@string/contact_photo"
+
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginStart="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="34sp"
+               android:textColor="@color/black"
+               android:textStyle="bold|italic"
+               android:id="@+id/Contact_name"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/Contact_number"
+               android:textStyle="bold|italic"
+               android:textSize="22sp"
+               android:layout_marginTop="10dp"/>
+       </LinearLayout>
+
+       <ImageButton
+           android:id="@+id/call"
+           android:layout_width="2dp"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>
